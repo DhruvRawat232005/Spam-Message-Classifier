@@ -1,0 +1,16 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <h1>Result</h1>
+        <p class="prediction {{ label_class }}">{{ prediction }}</p>
+        <a href="/" class="back-btn">Check Another Message</a>
+    </div>
+</body>
+</html>

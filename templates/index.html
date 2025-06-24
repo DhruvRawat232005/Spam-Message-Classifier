@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spam Message Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dark-theme">
+  <div class="container">
+    <h1>📨 Spam Message Classifier</h1>
+    <form action="/predict" method="post">
+      <textarea name="message" rows="6" placeholder="Enter your message here..." required></textarea>
+      <button type="submit">Check Message</button>
+    </form>
+  </div>
+</body>
+</html>
